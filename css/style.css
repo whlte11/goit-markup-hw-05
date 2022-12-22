@@ -114,6 +114,7 @@
     letter-spacing: 0.02em;
     position: relative;
     padding: 28px 0;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -160,6 +161,7 @@
     display: block;
     width: 100%;
     padding: 24px 0;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -208,7 +210,7 @@
     border: none;
     min-width: 106px;
     text-align: center;
-
+    transition-property: opacity, visibility, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -417,7 +419,7 @@
     justify-content: center;
     align-items: center;
 
-    transition-property: background-color;
+    transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -444,7 +446,7 @@
   border: 1px transparent;
   border-radius: 4px;
   padding: 12px 24px;
-  /* transition-property: background-color; */
+  transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -468,7 +470,7 @@
 
 .portfolio-link{
   display: block;
-  transition-property: background-color;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -581,6 +583,7 @@
     border: 1px solid currentColor;
     border-radius: 4px;
     color: #8E8F99;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -593,7 +596,6 @@
   .customers-link:hover,
   .customers-link:focus {
    color: var(--acent-color);
-   border: 1px solid var(--acent-color);
   }
   
   .customers-item {
@@ -674,7 +676,7 @@
   
   .media-list-link:hover,
   .media-list-link:focus {
-    color: var(--secondary-text-color);
+    /* color: var(--secondary-text-color);  */
     background-color: #31D0AA;
   }
   
